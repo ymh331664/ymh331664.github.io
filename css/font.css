@@ -1,0 +1,13 @@
+@font-face {
+    /*字体名称，名字可以随便起，但是注意要一致，建议英文*/
+    font-family: 'kongchen';
+    font-display: swap;
+    src: url('./font/kongchen-yishu.ttf') format("truetype");
+}
+
+@font-face {
+    /*字体名称，名字可以随便起，但是注意要一致，建议英文*/
+    font-family: 'kaiti';
+    font-display: swap;
+    src: url('./font/zhenwen-kaiti.ttf') format("truetype");
+}

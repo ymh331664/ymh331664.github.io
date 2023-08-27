@@ -1,0 +1,248 @@
+
+#web_bg {
+    background-image: url("../img/index_img.jpg"),
+    linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35))
+}
+
+/*导航栏居中*/
+#nav .menus_items {
+    display: inline;
+    position: absolute;
+    text-align: center;
+    width: fit-content;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.menus_item_child li:not(#sidebar-menus li){
+    float: left;
+    border-radius: 6px!important;
+    -webkit-border-radius: 6px!important;
+    -moz-border-radius: 6px!important;
+    -ms-border-radius: 6px!important;
+    -o-border-radius: 6px!important;
+}
+.menus_item_child:not(#sidebar-menus ul){
+    left:calc(-50%)!important;/*这是估算值，为了保持元素居中的，如果不合适可以自己调*/
+}
+/*导航条间距*/
+#nav .menus_items .menus_item{
+    padding: 0 0 0 14px;
+}
+#nav .menus_items .menus_item .menus_item_child{
+    float: left;
+    border-radius: 6px!important;
+    -webkit-border-radius: 6px!important;
+    -moz-border-radius: 6px!important;
+    -ms-border-radius: 6px!important;
+    -o-border-radius: 6px!important;
+}
+
+/* 侧边栏个人信息卡片动态渐变色 */
+#aside-content>.card-widget {
+    background: linear-gradient(-45deg,
+    #66FF00,
+    #66FF33,
+    #66FF66,
+    #66FF99,
+    #66FFCC,
+    #66CCFF,
+    #66CCCC,
+    #6699FF,
+    #6f8dba,
+    #6c89b2
+    );
+    box-shadow: 0 0 5px rgb(66, 68, 68);
+    position: relative;
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 10s ease infinite;
+    -moz-animation: Gradient 10s ease infinite;
+    animation: Gradient 10s ease infinite !important;
+}
+
+/* 翻页按钮居中 */
+#pagination {
+    width: 100%;
+    margin: auto;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* 个人信息Follow me按钮 */
+/*#aside-content>.card-widget.card-info>#card-info-btn {*/
+/*    background-color: #3eb8be;*/
+/*    border-radius: 8px;*/
+/*}*/
+
+#aside-content>.sticky_layout>.card-widget {
+    /* background: rgba(255, 255, 255, .75); */
+    background: linear-gradient(-45deg,
+    #66FF00,
+    #66FF33,
+    #66FF66,
+    #66FF99,
+    #66FFCC,
+    #66CCFF,
+    #66CCCC,
+    #6699FF,
+    #6f8dba,
+    #6c89b2
+    );
+    box-shadow: 0 0 5px rgb(66, 68, 68);
+    position: relative;
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 10s ease infinite;
+    -moz-animation: Gradient 10s ease infinite;
+    animation: Gradient 10s ease infinite !important;
+
+
+}
+
+/*文章页面*/
+.layout>#post {
+    background: rgba(255, 255, 255, .9);
+}
+
+/*分类页面*/
+.layout>#page {
+
+    background: rgba(255, 255, 255, .8);
+}
+
+/*时间轴页面*/
+.layout>#archive {
+    background: rgba(255, 255, 255, .8);
+}
+
+.layout>#tag {
+    background: rgba(255, 255, 255, .8);
+}
+
+.layout>#category {
+    background: rgba(255, 255, 255, .8);
+}
+
+
+
+/* 所有页面背景 */
+#aside_content .card-widget, #recent-posts>.recent-post-item, .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post {
+    /* 以下代表透明度为0.7 */
+    background: rgba(255, 255, 255, .8);
+}
+
+/*认真摸鱼*/
+.card-info-avatar .author-status-box {
+    position: absolute;
+    bottom: 0;
+    left: calc(100% - 28px);
+    width: 28px;
+    height: 28px;
+    border: 1px solid #d0d7de;
+    border-radius: 2em;
+    background-color: #f8f8f8f8;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+[data-theme="dark"] .card-info-avatar .author-status-box {
+    background-color: #222222f2;
+    border: 1px solid #5c6060;
+}
+
+.card-info-avatar .author-status-box .author-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    padding: 0 5px;
+}
+
+.card-info-avatar .author-status-box:hover {
+    width: 116px;
+}
+
+.card-info-avatar .author-status-box:hover .author-status span {
+    width: 116px;
+    margin-left: 4px;
+}
+
+.card-info-avatar .author-status-box .author-status span {
+    width: 0;
+    font-size: 15px;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: 0.4s;
+}
+
+.card-widget .card-info-avatar {
+    display: inline-block;
+    position: relative;
+}
+
+/* 信息卡片彩带 */
+.is-center:hover {
+    background: url(../img/snow.gif);
+    background-size: cover;
+}
+#nav .menus_items:hover {
+    background: url(../img/snow.gif);
+    background-size: cover;
+}
+
+/*加载界面*/
+.loading-img {
+    background: url(../img/head.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+/*友链样式*/
+/*#article-container .flink .flink-list {*/
+/*    text-align: left!important;*/
+/*}*/
+/*.flink-item-name, .flink-item-desc {*/
+/*    color: white!important;*/
+/*}*/
+
