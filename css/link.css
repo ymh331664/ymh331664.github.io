@@ -1,4 +1,4 @@
-/*/*友链滚动*/*/
+/*/*友链滚动*/
 /** {*/
 /*    !* -webkit-box-sizing: border-box; *!*/
 /*    -moz-box-sizing: border-box;*/
@@ -179,7 +179,12 @@
 .flink2{
     border-style:solid;
     border-color: #0084FF;
-    background-color: #f1efef;
+    /*background-color: #f1efef;*/
+    border:2px solid #a1a1a1;
+    padding:10px 40px;
+    background:#dddddd;
+    /*width:300px;*/
+    border-radius:25px;
 }
 
 .flink2 .tags-group-icon>.no-lightbox{
@@ -233,6 +238,11 @@
 /*.flink2 .author-content-item {*/
 /*    background: rgb(37 37 42 / 0%) !important;*/
 /*}*/
-.flink2 .img-alt{
-    display: none
+/*.flink2 .img-alt{*/
+/*    display: none*/
+/*}*/
+
+.layout.hide-aside{
+    max-width: 1900px
+
 }

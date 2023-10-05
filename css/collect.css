@@ -1,0 +1,110 @@
+
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.author-content-item {
+    width: 53%;
+    border-radius: 12px;
+    /*background: #66FFCC;*/
+    border: #f2ff00;
+    /*-webkit-box-shadow: #f2ff00;*/
+    /*box-shadow: #f2ff00;*/
+    position: relative;
+    padding: 1rem 1rem;
+    overflow: hidden;
+}
+
+.author-content-item.skills {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    /* min-height: 450px; */
+}
+.author-content-item.skills .tags-group-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: rowup 60s linear infinite;
+}
+.tags-group-icon-pair {
+    margin-left: 2rem;
+}
+/*.tags-group-icon {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    color: #fff;*/
+/*    font-size: 66px;*/
+/*    font-weight: 700;*/
+/*    box-shadow: rgba(255,255,255,0.9);*/
+/*    width: 160px;*/
+/*    height: 160px;*/
+/*    border-radius: 100px;*/
+/*    !*t头像外圈*!*/
+/*    border: 4px solid #a0a0a0;*/
+/*}*/
+.tags-group-icon img {
+    width: 60%;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*没有头像的字体*/
+    color: #fff;
+    font-size: 66px;
+    font-weight: 700;
+    /*box-shadow: rgba(255,255,255,0.9);*/
+    width: 160px;
+    height: 160px;
+    border-radius: 100px;
+    /*border: 4px solid #f2ff00;*/
+}
+.tags-group-icon-pair .tags-group-icon:nth-child(even) {
+    margin-top: 1rem;
+    transform: translate(-60px);
+}
+
+@keyframes rowup {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.flink2{
+    border-style:solid;
+    border-color: #0084FF;
+    background-color: #f1efef;
+}
+
+/*.flink2 .tags-group-icon>.no-lightbox{*/
+/*    border-radius: 100px !important;*/
+/*    width: 137px;*/
+/*    height: 137px;*/
+/*    !*头像内圈*!*/
+/*    border: 3px solid #23d5ab;*/
+/*}*/
+.flink2 .tags-group-all{
+    display: flex;
+}
+
+.flink2 .img-alt{
+    display: none
+}
+
+img{
+    margin: 0;
+    display: block;
+    height: 150px;
+    width: 150px;
+}
+
+.flink-item-img {
+    margin-right: 20px;
+}
